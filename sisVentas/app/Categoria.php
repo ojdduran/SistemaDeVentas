@@ -22,5 +22,4 @@ class Categoria extends Model
     protected $guarded =[
 
     ];
-
 }

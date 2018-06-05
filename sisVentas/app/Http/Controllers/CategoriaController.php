@@ -10,12 +10,10 @@ use Illuminate\Support\Facades\Redirect;
 use sisVentas\Http\Requests\CategoriaFormRequest;
 use DB;
 
-
-class CategoriaController extends Controller
-{
-    public function __construct()
+class CategoriaController extends Controller{
+   public function __construct()
     {
-
+        $this->middleware('auth');
     }
     public function index(Request $request)
     {
@@ -66,9 +64,4 @@ class CategoriaController extends Controller
         $categoria->update();
         return Redirect::to('almacen/categoria');
     }
-
-
-
-
-
 }

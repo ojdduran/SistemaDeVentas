@@ -21,7 +21,6 @@ class Articulo extends Model
     	'descripcion',
     	'imagen',
     	'estado'
-
     ];
 
     protected $guarded =[
